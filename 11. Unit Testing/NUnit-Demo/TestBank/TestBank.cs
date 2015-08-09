@@ -4,10 +4,25 @@ using NUnit.Framework;
 [TestFixture, Explicit]
 public class TestBank
 {
+    [SetUp]	
+    [Ignore]
+    public void InitBeforeEachTest()
+    {
+    	// TODO : to be implemented, remove attribute ignore.
+    }
+    
+    [TearDown]	
+    [Ignore]
+    public void CleanUpAfterEachTest()
+    {
+    	// TODO : to be implemented, remove attribute ignore.
+    }
+
     [TestFixtureSetUp]
     [Ignore]
     public void Init()
     {
+    	// Done once before all tests.
         // TODO: to be implemented
     }
 
@@ -15,6 +30,7 @@ public class TestBank
     [Ignore]
     public void Dispose()
     {
+    	// Done once after all tests.
         // TODO: to be implemented
     }
 
